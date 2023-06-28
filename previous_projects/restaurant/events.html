@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visual Studio Restaurant</title>
+    <link ref="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            margin-top: 2em;
+            font-size: 24px;
+        }
+
+        tr {
+            padding-bottom: 1em;
+        }
+
+        td {
+            padding-right: 1em;
+            border-bottom: 2px solid red;
+        }
+
+        tfoot,
+        tbody tr:nth-child(odd) {
+            color: grey;
+        }
+
+        table+p {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: 3em;
+            border-bottom: 2px solid black;
+        }
+
+        td:last-child {
+            color: blue;
+        }
+
+        form {
+            width: 70%;
+            margin: auto;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        label {
+            display: block;
+            padding-top: 1em;
+            width: 100%;
+        }
+
+        input {
+            width: 100%;
+            display: block;
+        }
+
+        #textbox {
+            margin-bottom: 2em;
+        }
+
+        form>input {
+            width: 20%;
+            text-align: center;
+            border: 2px solid red;
+            margin: auto;
+        }
+
+        form>input:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="logo" width="5%">
+        Welcome to VS Restaurant
+        <p>est.2022</p>
+        <nav>
+            <a href="index.html">home |</a>
+            <a href="menu.html">menu |</a>
+            <a href="media.html">media |</a>
+            <a href="contactus.html">contact |</a>
+            <a href="events.html">book event</a>
+        </nav>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <td>0-50 ppl</td>
+                <td>50-100 ppl</td>
+                <td>100+ ppl</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>buffet</td>
+                <td>$100</td>
+                <td>$200</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>served</td>
+                <td>$150</td>
+                <td>$250</td>
+                <td>$350</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>additional fees</td>
+            <td>$10</td>
+            <td>$20</td>
+            <td>$30</td>
+        </tfoot>
+    </table>
+    <p>Fill out the form below to schedule a reservation</p>
+    <form method="POST" action="reservations.php">
+        <label>Name: <input name="name" required></label>
+        <label>Phone Number: <input type="tel" name="phone" required minlength="10"></label>
+        <label>Email: <input type="email" name="email" placeholder="hi@example.com"></label>
+        <label>Preferred date: <input type="date" name="date" required></label>
+        <label>Number of guests: <input type="number" name="number" min="0" max="400"></label>
+        <label>Color scheme: <input type="color" name="color"></label>
+        <label>Price range: <input type="range" name="rate" value="0" max="5"></label>
+        <label>Buffet style: <input type="checkbox" name="buffet?"></label>
+        <label>Additional Information:</label><textarea name="info" id="textbox" cols="120" rows="10"></textarea>
+        <input type="submit">
+    </form>
+    <div id="chat-button"><a href="contactus.html">Have a question? Let's talk!</a></div>
+    <p id="web-design">&#169 Designed by E.W. of PCS development</p>
+</body>
+
+</html>

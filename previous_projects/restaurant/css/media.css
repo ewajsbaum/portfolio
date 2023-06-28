@@ -1,0 +1,95 @@
+html {
+    background-color: rgb(215, 51, 5);
+    font-family: papyrus, Arial, fantasy;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-top: 6px;
+    color: rgb(247, 245, 245);
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+header nav {
+    text-transform: uppercase;
+}
+
+header p {
+    text-align: center;
+    margin-top: 6px;
+    color: rgb(156, 153, 153);
+    font-size: .8rem;
+    font-style: italic;
+    border-bottom: 3px groove rgb(212, 204, 201);
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+a,
+article {
+    color: rgb(209, 151, 151);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black;
+}
+
+#web-design {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    text-align: right;
+}
+
+#logo {
+    transform: translate(0px, 15px);
+}
+
+.media {
+    display: inline-block;
+    height: 13em;
+    width: 20em;
+    background-color: white;
+    border: 5px solid rgb(69, 68, 68);
+    border-radius: 10px;
+    margin: 2.5em;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Lobster', cursive;
+    position: relative;
+}
+
+video {
+    height: 11em;
+    width: 18em;
+}
+
+.media>img {
+    display: block;
+    position: absolute;
+    left: 1em;
+    right: 1em;
+    top: 1.5em;
+    margin: auto;
+}
+
+.media>audio,
+.media>video {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    margin: auto;
+}
+
+@media screen and (min-width:801px) {
+    article {
+        margin: 10em;
+    }
+}

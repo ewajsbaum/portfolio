@@ -1,0 +1,112 @@
+html {
+    background-color: rgb(209, 208, 207);
+    font-family: papyrus, Arial, fantasy;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-top: 6px;
+    color: rgb(223, 28, 7);
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+header nav {
+    text-transform: uppercase;
+}
+
+header p {
+    text-align: center;
+    margin-top: 6px;
+    color: rgb(155, 4, 4);
+    font-size: .8rem;
+    font-style: italic;
+    border-bottom: 3px groove rgb(212, 204, 201);
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+a,
+article {
+    color: rgb(155, 4, 4);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black;
+}
+
+article {
+    text-align: center;
+    font-size: large;
+    border: 6px double rgb(138, 132, 130);
+    border-radius: 25px;
+    padding: 20px;
+    margin: 0px 70px;
+}
+
+#web-design {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    text-align: right;
+}
+
+#reviews {
+    color: rgb(43, 40, 40);
+    text-align: center;
+    box-sizing: border-box;
+    height: 170px;
+    overflow: auto;
+    border: 5px dotted rgb(255, 77, 0);
+    padding: 1em 4em;
+    margin: 20px 100px;
+}
+
+#reviews::first-line {
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+#new-item-name {
+    color: black;
+}
+
+ul {
+    list-style-type: circle;
+    line-height: 30px;
+}
+
+#logo {
+    transform: translate(0px, 15px);
+}
+
+#featured-items {
+    background: rgb(225, 93, 79);
+    background: radial-gradient(circle, rgba(225, 93, 79, 1) 0%, rgba(228, 193, 193, 1) 45%, rgba(223, 28, 7, 1) 91%, rgba(209, 208, 208, 1) 99%);
+}
+
+#info {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#chat-button {
+    height: 5sm;
+    width: 7em;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    line-height: 22px;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        #left_side {
+            background-color: rgb(102, 255, 0);
+            border: 10px solid orange;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #right_side {
+            background-color: rgb(205, 249, 46);
+            border: 10px solid orange;
+            display: flex;
+            justify-content: center;
+        }
+
+        #right_side img {
+            height: 500px;
+            padding-top: 70px;
+        }
+
+        .part {
+            width: 150px;
+            height: auto;
+            margin: 10px;
+        }
+
+        #audio {
+            height: 25px;
+            width: 60px;
+            background-color: red;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 100%;
+        }
+
+        #messageBox {
+            height: 18em;
+            width: 30em;
+            background-color: crimson;
+            border: 3px solid white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -200px;
+            margin-top: -105px;
+            z-index: 1000;
+            padding-left: 3.5em;
+            padding-top: 3em;
+            box-sizing: border-box;
+        }
+
+        #modal {
+            display: block;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        input {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 20px 0;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            border-bottom: 4px solid black;
+            box-sizing: border-box;
+        }
+
+        #bar {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            margin-top: 10px;
+            height: 18px;
+            position: absolute;
+            display: none;
+        }
+
+        #name,
+        #project {
+            color: red;
+        }
+
+        #clear {
+            height: 3em;
+            width: 6em;
+            background-color: white;
+            border: 2px solid red;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+
+        #clear:hover {
+            background-color: white;
+            color: red;
+        }
+
+        #changeProject {
+            font-size: 14px;
+            text-decoration: underline;
+            font-weight: lighter;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="modal"></div>
+    <form id="messageBox">
+        <input type="text" placeholder="Your Name Here" id="playerName" required>
+        <input type="text" placeholder="Your Project Name" id="projectName" required>
+        <button type="submit">START!</button>
+    </form>
+    <div id="left_side"></div>
+    <div id="right_side">
+        <button id="audio">&#9836;</button>
+        <div id="bar"><span id="name"></span>, you are currently working on project <span id="project"></span> and just
+            killin it! <span id="changeProject">change projects</span></div>
+        <img src="MPHparts/body.png">
+        <button id="clear">Clear All</button>
+    </div>
+    <audio id="music" src="song.mp3" autoplay></audio>
+    <audio id="boing" src="boing.mp3"></audio>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="potatohead.js"></script>
+</body>
+
+</html>

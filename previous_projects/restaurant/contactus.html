@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VS Contact</title>
+    <link ref="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        .contact-info li,
+        .contact-info li a {
+            color: rgb(86, 96, 96);
+            font-size: 16px;
+            font-family: Monaco, Arial, monospace;
+            text-align: left;
+            font-style: normal;
+            list-style-type: none;
+        }
+
+        .contact-info {
+            padding-top: 5em;
+            padding-bottom: 5em;
+            margin: auto;
+            padding-right: 3em;
+            border-right: 1px solid black;
+            float: left;
+        }
+
+        #shadow {
+            font-weight: bold;
+            text-shadow: 2px 1px 1px white;
+            color: black;
+        }
+
+        div {
+            margin-top: 2em;
+            margin-left: 2em;
+        }
+
+        div>img {
+            width: fit-content;
+            display: block;
+            margin: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="css/smallScreen.css" media="screen and (max-width:800px)">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images\logo.png" alt="logo" width="5%">
+        Welcome to VS Restaurant
+        <p>est.2022</p>
+        <nav>
+            <a href="index.html">home |</a>
+            <a href="menu.html">menu |</a>
+            <a href="media.html">media |</a>
+            <a href="contactus.html">contact |</a>
+            <a href="events.html">book event</a>
+        </nav>
+    </header>
+    <article>
+        <h2 id="shadow">We look forward to hearing from you!</h2>
+        <ul class="contact-info">
+            <li>Phone: 098 908 3248 &nbsp</li>
+            <li>Email: orders@vsrestaurant.com &nbsp</li>
+            <li>Website:<a class="link" href="index.html">www.VSrestaurant.com</a></li>
+        </ul>
+        <div>
+            Find us on
+            <a class="link" href="https://www.google.com/maps/@40.8251285,-73.568128,8z" target="_blank">Google Maps</a>
+            <img src="images/streetview.jpg" alt="streetview">
+        </div>
+    </article>
+    <p id="web-design">&#169 Designed by E.W. of PCS development</p>
+</body>
+
+</html>
