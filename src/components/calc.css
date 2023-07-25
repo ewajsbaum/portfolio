@@ -1,0 +1,46 @@
+#calculator {
+    height: 450px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 40px 30px auto auto auto auto auto;
+    gap: 4px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 8px;
+
+}
+
+#screen {
+    grid-column: 1/4;
+    background-color: lightblue;
+    text-align: right;
+    font-size: 30px;
+}
+
+#input {
+    grid-column: 1/4;
+}
+
+.operator,
+.number,
+#equals {
+    font-size: large;
+    font-weight: bold;
+}
+
+.operator {
+    border: 2px solid red;
+    color: red;
+    background-color: gainsboro;
+}
+
+.number {
+    border: 2px solid greenyellow;
+    color: green;
+}
+
+#equals {
+    grid-column: 1/4;
+    background-color: red;
+}
