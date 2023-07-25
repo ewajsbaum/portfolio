@@ -6,7 +6,7 @@ export default function Projects() {
 
     const projects = [
         {
-            img: "images/calculator.png",
+            img: "calculator.png",
             text: "Make quick and accurate calculations with this React calculator.",
             url: '/calculator'
         },

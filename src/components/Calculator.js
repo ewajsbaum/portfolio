@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './calc.css';
 
-export default class App extends Component {
+export default class Calculator extends Component {
     constructor() {
         super();
         this.numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '.'];

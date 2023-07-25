@@ -25,7 +25,7 @@ root.render(
           <Route path='/calculator' element={<Calculator />}></Route>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter >
   </>
 
 
