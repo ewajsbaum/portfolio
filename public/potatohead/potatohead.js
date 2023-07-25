@@ -30,7 +30,7 @@
         });
 
         for (let i = 0; i < availablePics; i++) {
-            $(`<img class="part" src="MPHparts/picture${i + 1}.png"></img>`).appendTo('#left_side');
+            $(`<img class="part" src="MPHparts/Picture${i + 1}.png"></img>`).appendTo('#left_side');
         }
     }
 

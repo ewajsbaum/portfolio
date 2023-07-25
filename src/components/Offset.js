@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from 'react-router-dom';
+import resume from '../resume.pdf'
 
 export default function Nav() {
     const [show, setShow] = useState(false);
@@ -27,7 +28,9 @@ export default function Nav() {
                         <NavLink to='/currentProject' className='customLink'>Current Project</NavLink>
                         <NavLink to='/projects' className='customLink'>Previous Projects</NavLink>
                         <NavLink to='/education' className='customLink'>Education</NavLink>
-                        <NavLink to='/work' className='customLink'>Work Experience</NavLink>
+                        <a href={resume} target="_blank" rel="noreferrer" className='customLink'>Resume</a>
+                        <a href="https://github.com/ewajsbaum/myprojects" target="_blank" rel="noreferrer" className='customLink'>GitHub</a>
+
                     </nav>
                     <Button id="contactButton" onClick={handleContact}>contact</Button>
                     {contactInfoShowing && <div className="card card-body">

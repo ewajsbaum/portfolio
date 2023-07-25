@@ -7,8 +7,8 @@
 }
 
 Container>.card {
-    width: 272px;
-    height: 320px;
+    width: 282px;
+    height: 350px;
     margin: 3em 2em 4em 2em;
     padding: 1em;
     border: 1px solid red;
@@ -39,17 +39,100 @@ Container>.card {
     border: 1px solid rgb(232, 232, 232) !important;
 }
 
-.projectList {
-    justify-content: center;
-    align-items: center;
-
+#quote {
+    font-style: italic;
 }
 
-.temp {
+
+.projectsPage {
+    background-color: black;
+    color: white;
+}
+
+.prevProjects {
+    width: 100%;
     display: flex;
-    justify-content: center;
+}
+
+.prevProject {
+    height: 100vh;
+    width: 33.33%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.projInfo {
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 30%;
+    bottom: 10em;
+    z-index: 1;
+    font-size: 18;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2em;
+}
+
+.projInfo:hover {
+    background-color: rgba(255, 124, 124)
+}
+
+.projPic {
+    height: 100%;
+    width: 100%;
+}
+
+.projButton {
+    text-decoration: none;
+    background-color: grey;
+    border-radius: 4px;
+    color: red;
+    border: 1px solid red;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 1.5em;
+    width: 85%;
+}
+
+#projThirdCol {
+    padding-top: 175px;
+    padding-left: 25px;
+}
+
+#cp_page {
+    background: hsla(173, 100%, 60%, 1);
+    background: linear-gradient(90deg, hsla(173, 100%, 60%, 1) 1%, hsla(180, 89%, 65%, 1) 23%, hsla(196, 90%, 59%, 1) 64%);
+    min-height: 100vh;
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+#cp_page>h3 {
+    font-family: 'Courier New', sans-serif;
+}
+
+#educ_page {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
 
 }
 
-.cardPic {}
+#educ_page>h1 {
+    margin-top: 1em;
+    color: rgb(140, 0, 28);
+}
+
+#educ_page>.ed_card {
+    width: 90%;
+    background-color: rgb(255, 244, 244);
+}
