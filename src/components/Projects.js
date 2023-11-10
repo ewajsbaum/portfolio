@@ -6,14 +6,16 @@ export default function Projects() {
 
     const projects = [
         {
-            img: "calculator.png",
+            id: 1,
+            img: "images/calculator.png",
             text: "Make quick and accurate calculations with this React calculator.",
             url: '/calculator'
         },
         {
+            id: 2,
             img: "images/potatohead.png",
             text: "Mr. Potato Head is for any age :) Create a profile and save your work for later!",
-            url: "/potatohead/potatohead.html"
+            url: "potatohead/potatohead.html"
         }
     ];
 
@@ -26,7 +28,8 @@ export default function Projects() {
                             <img className="projPic" src={p.img} alt="project"></img>
                             <div className="projInfo">
                                 {p.text}
-                                <NavLink className="projButton" to={p.url} target="_blank">view</NavLink>
+                                {p.id === 1 && <NavLink className="projButton" to={p.url} target="_blank">view</NavLink>}
+                                {p.id === 2 && <a className="projButton" href={p.url} target="_blank" rel="noreferrer">view</a>}
                             </div>
                         </div>
                     ))}

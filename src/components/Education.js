@@ -25,8 +25,8 @@ export default function Education() {
                     <Card.Text>
                         Software, Web and Application Development Course<br />
                         Completed an intensive and comprehensive program focused on developing critical,
-                        real-world web and application programming and design skills. Developed practical
-                        applications in HTML, CSS, JavaScript, jQuery and AJAX.
+                        real-world web and application programming and design skills. Developed practical applications and databases in C#, JavaScript,
+                        HTML, CSS, Node.js and React. Gained critical skills in application security and best practices.
                     </Card.Text>
                     <a href="https://pcsnynj.org/" target="_blank" rel="noreferrer"><Button variant="light">Learn More</Button></a>
                 </Card.Body>
